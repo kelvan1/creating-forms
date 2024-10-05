@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating a form</title>
+</head>
+<body>
+
+    <form action="" method="">
+        <fieldset>
+            <legend>Add user</legend>
+
+            <div>
+                <label for="firstName">firstName</label>
+                <input type="text" id="firstName" name="firstName">
+            </div>
+
+            <div>
+                <label for="lastName">lastName</label>
+                <input type="text" id="lastName" name="lastName">
+            </div>
+
+            <div>
+                <label for="email" >Email</label>
+                <input type="email" id="email" name="email_address">
+            </div>
+            <!--here we gotta create a drop down menu labelled status-->
+            <!--with three options --Student
+            Teacher
+            and Guest-->
+            <div>
+                <label for="status">Status</label>
+                <select id="status" name="user_status">
+                    <option value="student">Student</option>
+                    <option value="teacher">Teacher</option>
+                    <option value="guest">Guest</option>
+                </select>
+
+            </div>
+            <!--creating radio buttons-->
+            <div>
+                <p>
+                    Choose your favorite programming language
+                </p>
+            </div>
+            <div>                    
+
+                <!--we begin by creating radio buttons with the
+                labels "HTML", "CSS" "Javascript"-->
+
+                <label for="html">HTML</label>
+                <input type="radio" id="html" name="html_language">
+
+            </div>
+            <div>
+                <label for="css">CSS</label>
+                <input type="radio" id="css" name="css_language">
+            </div>
+            <div>
+                <label for="javascript">Javascript</label>
+                <input type="radio" id="javascript" name="javascript_language">
+                
+            </div>
+            <!--here we gotta have additional information-->
+            <div>
+                <textarea id="comments" name="comment_section">Comments</textarea>
+
+            </div>
+            <div>
+                <label for="date">current date</label>
+                <input type="date" id="date" name="current_date">
+            </div>
+            <!--add the submission section
+            create two checkbox.-->
+
+            <div>
+
+                <label for="sign-up">Sign up for newsletter</label>
+                <input type="checkbox" id="sign-up" name="newsletter_signup">
+
+
+            </div>
+            <div>
+                <label for="terms">Agree to terms and conditions:</label>
+                <input type="checkbox" id="terms" name="terms">
+            </div>
+            <div>
+                <button type="submit">Submit</button>
+            </div>
+
+            
+        </fieldset>
+
+    </form>
+    
+</body>
+</html>
